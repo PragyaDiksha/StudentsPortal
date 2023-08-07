@@ -1,0 +1,23 @@
+﻿
+@model StudentsPortal.Models.Students
+
+@{
+    ViewBag.Title = "Students";
+}
+
+@using (Html.BeginForm("SaveStudents", "Students"))
+{
+<h2>Students Details</h2>
+
+<label>Name:</label>
+@Html.TextBoxFor(m => m.Name)
+
+<br />
+
+<label>Address:</label>
+@Html.TextAreaFor(m => m.Address)
+
+<br />
+
+<button>Save</button>
+}
