@@ -19,5 +19,27 @@
 
 <br />
 
+<label>Gender:</label>
+
+<label>
+@Html.RadioButtonFor(m => m.Gender, "M")
+Male
+</label>
+
+<label>
+@Html.RadioButtonFor(m => m.Gender, "F")
+Female
+</label>
+
+<br/>
+
+<label>Passport:</label>
+
+<label>
+@Html.CheckBoxFor(m => m.Passport)
+</label>
+
+<br/>
+
 <button>Save</button>
 }
